@@ -11,11 +11,16 @@
     "postinstall": "rexreplace \"followSymlinks: false\" \"followSymlinks: true\" ./node_modules/watchpack/lib/DirectoryWatcher.js -V"
   },
   "devDependencies": {
-    "rexreplace": "^4.1.1"
+    "lerna": "^3.22.1",
+    "rexreplace": "^4.1.1",
+    "yarn-workspace-isolator": "^0.1.0-rc1"
   },
   "workspaces": [
     "blog",
     "design",
     "api"
+  ],
+  "nohoist": [
+    "**/blog/**"
   ]
 }

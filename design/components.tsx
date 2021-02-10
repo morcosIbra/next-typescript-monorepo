@@ -14,7 +14,7 @@ const Main = styled.main`
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Main>
-      <Heading>Acme's blog</Heading>
+      <Heading>Acme's blogsssA</Heading>
       {children}
     </Main>
   );
