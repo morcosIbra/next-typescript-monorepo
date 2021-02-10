@@ -1,0 +1,62 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'C:\\Users\\MarcosDaniel\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath C:\Vezeeta\sharing code\monorepo\next-typescript-monorepo
+3 info versioning independent
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 4
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "v1.0.3-1-gffed13a" => {"lastTagName":"v1.0.3","lastVersion":"v1.0.3","refCount":"1","sha":"ffed13a","isDirty":false}
+14 info Looking for changed packages since v1.0.3
+15 silly checking diff api
+16 silly no diff found in @acme/api
+17 silly checking diff blog
+18 silly no diff found in @acme/blog
+19 silly checking diff design
+20 silly found diff in design/components.tsx
+21 verbose filtered diff [ 'design/components.tsx' ]
+22 verbose updated @acme/blog
+23 verbose updated @acme/design
+24 verbose git-describe undefined => "v1.0.3-1-gffed13a"
+25 silly git-describe parsed => {"lastTagName":"v1.0.3","lastVersion":"v1.0.3","refCount":"1","sha":"ffed13a","isDirty":false}
+26 info execute Skipping releases
+27 silly lifecycle No script for "preversion" in "acme", continuing
+28 silly lifecycle No script for "preversion" in "@acme/design", continuing
+29 silly lifecycle No script for "version" in "@acme/design", continuing
+30 silly lifecycle No script for "preversion" in "@acme/blog", continuing
+31 silly lifecycle No script for "version" in "@acme/blog", continuing
+32 silly lifecycle No script for "version" in "acme", continuing
+33 silly gitAdd [ 'design/package.json', 'blog/package.json' ]
+34 silly gitCommit Publish
+34 silly gitCommit
+34 silly gitCommit  - @acme/blog@1.0.0
+34 silly gitCommit  - @acme/design@1.0.3
+35 verbose git [
+35 verbose git   'commit',
+35 verbose git   '-F',
+35 verbose git   'C:\\Users\\MARCOS~1\\AppData\\Local\\Temp\\6b40fa4a-23ac-4c97-9f29-c050e5e3e930\\lerna-commit.txt'
+35 verbose git ]
+36 silly gitTag @acme/blog@1.0.0
+37 verbose git [ 'tag', '@acme/blog@1.0.0', '-m', '@acme/blog@1.0.0' ]
+38 silly gitTag @acme/design@1.0.3
+39 verbose git [ 'tag', '@acme/design@1.0.3', '-m', '@acme/design@1.0.3' ]
+40 silly lifecycle No script for "postversion" in "@acme/blog", continuing
+41 silly lifecycle No script for "postversion" in "@acme/design", continuing
+42 silly lifecycle No script for "postversion" in "acme", continuing
+43 info git Pushing tags...
+44 silly gitPush origin master
+45 error Error: Command failed: git push --follow-tags --no-verify --atomic origin master
+45 error remote: Permission to josephluck/next-typescript-monorepo.git denied to morcosIbra.
+45 error fatal: unable to access 'https://github.com/josephluck/next-typescript-monorepo.git/': The requested URL returned error: 403
+45 error
+45 error     at makeError (C:\Vezeeta\sharing code\monorepo\next-typescript-monorepo\node_modules\execa\index.js:174:9)
+45 error     at C:\Vezeeta\sharing code\monorepo\next-typescript-monorepo\node_modules\execa\index.js:278:16
